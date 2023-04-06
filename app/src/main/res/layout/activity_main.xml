@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:src="@drawable/bdp"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="বাংলাদেশ পুলিশ হেল্পলাইন"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/font2"
+            android:gravity="bottom"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="170dp"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_back"
+            android:layout_marginTop="210dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+
+
+
+            <GridView
+                android:id="@+id/gridView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="2"
+                android:layout_marginTop="40dp"
+                android:listSelector="@android:color/transparent"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginRight="85dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="জরুরি কল করুন"
+                android:layout_marginTop="40dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/font2"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="999"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#3BD2AE"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:gravity="end"
+            android:layout_marginRight="10dp"
+            >
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/call999"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:lottie_rawRes="@raw/call"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                />
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>
